@@ -1,0 +1,143 @@
+.personCard {
+    width: 100%;
+ padding: 2% 0 0 0 ;
+}
+
+.personCardTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: large;
+    font-weight: 400;
+    padding-bottom: 1%;
+}
+
+.personCardSecondContainer {
+    padding: 2% 2% 2% 2%;
+}
+
+.personCardSecondContainerCards {
+    gap: 1%;
+}
+
+.examplecard {
+    position: relative;
+    border-radius: 20px;
+    justify-content: flex-end;
+    width: 19%;
+}
+.exampleFasttrackCard{
+    position: relative;
+    border-radius: 20px;
+    justify-content: flex-end;
+    z-index: 1 ;
+    width: 19%;
+}
+.exampleFasttrackCard::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(79,92,173,255), rgb(1, 1, 127));
+    opacity: 0.80;
+}
+.examplecard::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
+}
+
+.exampleCardFasttrack {
+    padding: 6% 0% 0% 1%;
+    border-radius: 20px;
+}
+
+.examplecardInner {
+    z-index: 1;
+}
+
+.personCardTitleText {
+    font-size: large;
+    font-weight: 400;
+}
+
+.personCardSecondContainerSpecialCards {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.cardButton {
+    height: 45px;
+    width:45px;
+    border-radius: 50%;
+    color: rgba(6, 14, 159, 255) !important;
+    background-color: white;
+    align-items: center;
+    padding:  0 0 0 0 !important;
+    border: none;
+}
+
+.cardMatButton {
+
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.cardIcon {
+    margin-right: 0 !important;
+    transform: scale(1.5);
+}
+
+.cardContentText {
+    color: white !important;
+    font-size: medium !important;
+    font-weight: 600;
+
+}
+.cardContent{
+    z-index: 1 !important;
+}
+.cardHeader {
+    display: none;
+}
+
+.cardFasttrackerHeader {
+    padding-bottom: 5%;
+    font-size: xx-large;
+    font-weight: bolder;
+    align-items: center;
+    color: white;
+    z-index: 1 !important;
+}
+
+.cardFlex {
+    display: flex;
+}
+
+.cardSize {
+    height: 270px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cardContentNumber {
+    color: white !important;
+    font-size: x-large !important;
+    font-weight: 600;
+}
+
+.cardContentTextInner {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.specialCardTilte{
+    padding-bottom: 1.5%;
+    font-size: large;
+    font-weight: 400;
+}

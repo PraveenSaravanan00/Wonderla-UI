@@ -1,0 +1,66 @@
+.verificationContainer{
+width: 100%;
+}
+.verificationContainerTilte{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+    font-weight: 400;
+    padding: 2% 0%;
+}
+.verificationContainerContent{
+width: 100%;
+display: flex;
+padding-left: 1%;
+gap: 14px;
+}
+.verificationContainerContentCardOne{
+    width: 50%;
+    padding: 4%;
+   flex-direction: row;
+   border: 3px solid #f1efff;
+}
+.verificationContainerContentCardTwo{
+    width: 50%;
+    border: 3px solid #f1efff;
+}
+.verificationButton{
+    width: 10%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.verificationCardTitle{
+    color: #666666;
+    font-size: medium;
+}
+.verificationCardInput{
+    font-size: larger;
+   font-weight: bold;
+}
+.verificationCardInputText{
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px;
+}
+.verificationContainerContentCardOneContentNumber{
+    padding: 2%;
+}
+.verificationOtp{
+    align-items: center;
+    font-weight: 700;
+    font-size: large;
+}
+.verificationOtpId{
+    height: 30%;
+    gap: 30px;
+    justify-content: center;
+}
+.verificationContainerContentCardTwo{
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.verificationOtpTime{
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+<div class="verificationContainer">
+    <div class="verificationContainerTilte">
+        <div><img src="../../assets/Wonder - Home (1)/Check in.svg" alt="checkin"></div>
+        <div>Verify your self (Optional)</div>
+    </div>
+    <div class="verificationContainerContent">
+        <mat-card class="verificationContainerContentCardOne row">
+            <div class="verificationContainerContentCardOneContent col-6">
+                <div class="verificationContainerContentCardOneContentNumber">
+                    <mat-label class="verificationCardTitle">MOBILE NUMBER</mat-label>
+                </div>
+                <div class="row" class="verificationCardInput">
+                    <span matPrefix class="col-2">+91 &nbsp;</span>
+                    <input type="tel" class="col-2" matInput maxlength="10" class="verificationCardInputText">
+                </div>
+            </div>
+            <div class="col-2">
+                <button mat-stroked-button color="primary" class="verificationButton "
+                    style="border:2px solid #242baa;">Edit</button>
+            </div>
+        </mat-card>
+        <mat-card class="verificationContainerContentCardTwo">
+            <div class="verificationOtpId d-flex flex-row">
+                <input matInput type="tel" maxlength="1" class="verificationOtp col-1">
+                <input matInput type="tel" maxlength="1" class="verificationOtp col-1">
+                <input matInput type="tel" maxlength="1" class="verificationOtp col-1">
+                <input matInput type="tel" maxlength="1" class="verificationOtp col-1">
+                <input matInput type="tel" maxlength="1" class="verificationOtp col-1">
+            </div >
+            <div class="verificationOtpTime row">Wait for 00.30 to <button class="col" mat-stroked-button color="primary" style="border: none;">Resend OTP</button>
+            </div>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+
+.headerImage{
+    width: 30%;
+}
+.toolbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.headerText{
+    font-size:medium;
+    font-weight:500;
+    color:#1119a3;
+    text-decoration: none;
+}
+.headerInnerFlex{
+    width: 85%;
+    display: flex;
+    gap: 5%;
+}
+.headerImageSize{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.headerTextSize{
+    width: 80%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.accountIcon{
+    height: 100%;
+    width: 100%;
+    border: none;
+// background-color: white !important;
+}
+.headerIcon{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+.accountIconSize{
+    height: 70%;
+    width: 100%;
+    font-size: 50px;
+    color: #1119a3;
+    // align-items: center;
+}
+.accountIconImage{
+    width: 8%;
+    padding: 0px 0 15px 0;
+}

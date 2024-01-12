@@ -1,0 +1,67 @@
+<div class="cardComponent">
+    <div class="smallCardContainer">
+        <div class="smallCardContainerContent">
+            <div><img src="../../assets/Wonder - Home (1)/Location.svg" alt="location"></div>
+            <div>Where do you want to visit?</div>
+        </div>
+        <div class="cardComponentFlex">
+            <mat-card class="cardComponentCards">
+                <img src="../../assets/Wonder - Home (1)/New Bengaluru.svg">
+                <mat-card-title class="cardComponentTitle">Bengaluru</mat-card-title>
+            </mat-card>
+            <mat-card class="cardComponentCards">
+                <img src="../../assets/Wonder - Home (1)/New Hydrabad.svg">
+                <mat-card-title class="cardComponentTitle">Hyderabad</mat-card-title>
+            </mat-card>
+            <mat-card class="cardComponentCards">
+                <img src="../../assets/Wonder - Home (1)/New Kochi.svg">
+                <mat-card-title class="cardComponentTitle">Kochi</mat-card-title>
+            </mat-card>
+        </div>
+    </div>
+    <div class="largeCardContainer">
+        <div class="largeCardContainerContent">
+            <div><img src="../../assets/Wonder - Home (1)/Date.svg" alt="date"></div>
+            <div>Where do you want to visit?</div>
+            <div class="largeCardContainerContentSubtext">Select the date of visit</div>
+        </div>
+        <div class="largeCardContainerCardFlex">
+            <mat-card class="largeCardContainerCard">
+                <mat-card-header class="container-fluid largeCardContainerInner">
+                    <div class="largeCardContainerInnerTitle">
+                        <button style="border: none;background-color: #f1efff;"><img
+                                src="../../assets/Wonder - Home (1)/Icon awesome-chevron-down-1.svg"
+                                class="largeCardButtonImageOne"></button>
+                        <button style="border: none;background-color: #f1efff;"><img
+                                src="../../assets/Wonder - Home (1)/Icon awesome-chevron-down-1.svg"
+                                class="largeCardButtonImageTwo"></button>
+                        <mat-card-title>January 2024</mat-card-title>
+                    </div>
+                    <div class="largeCardContainerInnerSubtitle">
+                        <mat-card-subtitle class="CardSubtitle d-flex">
+                            <div class="cardCircleContent" style="background-color: greenyellow;"></div>Available
+                        </mat-card-subtitle>
+                        <mat-card-subtitle class="CardSubtitle d-flex">
+                            <div class="cardCircleContent" style="background-color: red;"></div>Sold Out
+                        </mat-card-subtitle>
+                        <mat-card-subtitle class="CardSubtitle d-flex">
+                            <div class="cardCircleContent" style="background-color: orange;"></div>Fast Filling
+                        </mat-card-subtitle>
+                        <mat-card-subtitle class="CardSubtitle d-flex">
+                            <div class="cardCircleContent" style="background-color: skyblue;"></div>Special Offers
+                        </mat-card-subtitle>
+                    </div>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content class="smallCardContent  row d-flex justify-content-around align-items-center">
+                    <mat-card class="smallCard col-1 align-items-center" [ngClass]="smallCardActive[i]? 'smallCardactive':'smallCard'" (click)="smallCardClick(i)" *ngFor="let item of smallCard let i = index">
+                        <mat-card-title class="smallCardTilte">{{item.day}}</mat-card-title>
+                        <mat-card-title class="smallCardNumber">{{item.date}}</mat-card-title>
+                        <div class="smallCardTag" style="background-color: {{item.color}}"></div>
+                    </mat-card>
+                    <mat-datepicker-toggle matIconSuffix class="calenderIcon col-1"></mat-datepicker-toggle>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

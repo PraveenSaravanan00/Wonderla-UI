@@ -1,0 +1,55 @@
+<div class="personCard">
+    <div class="personCardFirstContainer">
+        <div class="personCardTitle ">
+            <div class="personCardTitleImage"><img src="../../assets/Wonder - Home (1)/Person.svg" alt="person"></div>
+            <div class="personCardTitleText">Number of persons</div>
+        </div>
+        <div>
+            How many people are visiting?
+        </div>
+    </div>
+    <div class="personCardSecondContainer">
+        <div class="personCardSecondContainerCards row">
+            <mat-card *ngFor="let item of personCardData" 
+                [style.background]="'url('+item.image+')'" style="z-index: 1;" [ngClass]="(item.fasttrack=='')?'examplecard cardSize col-2':'exampleFasttrackCard cardSize col-2'">
+                <mat-card-header [ngClass]="(item.fasttrack=='')?'cardHeader':'cardFasttrackerHeader'">
+                    <i>FAST TRACK</i>
+                </mat-card-header>
+                <mat-card-content class="cardContent">
+                    <mat-card-title class="cardContentText">{{item.category}}<span class="cardContentTextInner">{{item.size}}</span></mat-card-title>
+                    <mat-card-title class="cardContentText">{{item.price | currency:'INR':true}}<span class="cardContentTextInner">Per ticket</span></mat-card-title>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-actions class="cardMatButton">
+                    <button  class="cardButton ">
+                        <mat-icon class="cardIcon">remove</mat-icon>
+                    </button>
+                    <div class="cardContentNumber">0</div>
+                    <button  class="cardButton">
+                        <mat-icon class="cardIcon">add</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="personCardSecondContainerSpecialCards d-flex justify-content-start row">
+            <div class="specialCardTilte">Special Ticket</div>
+            <mat-card class="examplecard cardSize cardPadding col-2" *ngFor="let item of specialPersonData"
+                [style.background]="'url('+item.image+')'">
+                <mat-card-content class="cardContent">
+                    <mat-card-title class="cardContentText">{{item.category}}<span class="cardContentTextInner">{{item.size}}</span></mat-card-title>
+                    <mat-card-title class="cardContentText">{{item.price | currency:'INR':true}}<span class="cardContentTextInner">Per ticket</span></mat-card-title>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-actions class="cardMatButton">
+                    <button  class="cardButton">
+                        <mat-icon class="cardIcon">remove</mat-icon>
+                    </button>
+                    <div class="cardContentNumber">0</div>
+                    <button  class="cardButton">
+                        <mat-icon class="cardIcon">add</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

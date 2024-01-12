@@ -1,0 +1,67 @@
+.footerToolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 6% 3% 6%;
+}
+
+.footerContent {
+    width: 65%;
+}
+
+.footerbutton {
+    width: 35%;
+    display: flex;
+    gap: 20px;
+}
+
+.footerContentText {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.fooetContentInnerText {
+    font-size: large;
+    font-weight: 800;
+
+}
+
+.footerContentButton {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    border-radius: 20px;
+    color: #1119a3 !important;
+    background-color: #fffcc4 !important;
+}
+
+.footerSecondContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: medium;
+    font-weight: 400;
+    padding: 6px 0px;
+}
+
+.footerButtonFirstFlex {
+    display: flex;
+    padding: 30px !important;
+    border: 2px solid #060e9f !important;
+}
+.footerButtonSecondFlex {
+    display: flex;
+    padding: 30px !important;
+    background-color: #060e9f !important;
+}
+.footerButtonTitle {
+    font-size: large;
+    font-weight: 900;
+}
+.footerSecondContentText{
+    font-size: large;
+    font-weight: 500;
+    align-items: center;
+}
+
